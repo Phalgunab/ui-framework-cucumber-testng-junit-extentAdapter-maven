@@ -14,12 +14,11 @@ import org.slf4j.LoggerFactory;
 public class LoginStepDefinitions {
 
     private static Logger logger = LoggerFactory.getLogger(LoginStepDefinitions.class);
-    WebDriver driver;
     @Given("I navigate to page")
     public void iNavigateToPage() {
         logger.info("Inside Navigation!");
         System.out.println("Inside Navigation!");
-        driver = DriverManager.getDriver();
+        WebDriver driver = DriverManager.getDriver();
         driver.get("http://www.facebook.com");
         logger.info("Accessing driver from Steps");
         Assert.assertEquals("Abc","Abc");

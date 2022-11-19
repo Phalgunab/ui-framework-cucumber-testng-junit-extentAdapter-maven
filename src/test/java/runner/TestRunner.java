@@ -1,6 +1,5 @@
 package runner;
 
-import driver.DriverManager;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -24,12 +23,9 @@ import org.junit.runner.RunWith;
 public class TestRunner {
 
         @BeforeClass
-        public static void beforeProcesses(){
-
-        }
+        public static void beforeProcesses(){}
 
         @AfterClass
-        public static void closeProcesses(){
-                DriverManager.getDriver().quit();
-        }
+        public static void closeProcesses(){}
+
 }

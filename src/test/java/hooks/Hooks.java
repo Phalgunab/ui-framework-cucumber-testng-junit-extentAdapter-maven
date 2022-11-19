@@ -1,7 +1,11 @@
 package hooks;
 
+
 import driver.DriverManager;
-import io.cucumber.java.*;
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
@@ -9,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 public class Hooks {
     private static Logger logger = LoggerFactory.getLogger(Hooks.class);
-    private WebDriver driver;
+    WebDriver driver;
     @Before
     public void doSomething() {
         logger.trace("Before Scenario Executed");
@@ -22,7 +26,7 @@ public class Hooks {
     @After
     public void doAfterThing() {
         logger.info("After Scenario Executed");
-
+        driver.quit();
     }
 
     @BeforeStep

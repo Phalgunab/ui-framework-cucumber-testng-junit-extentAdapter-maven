@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="12.396">
-<testcase classname="To validate the login" name="Login" time="9.6">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="13.306">
+<testcase classname="To validate the login" name="Login" time="7.44">
 <system-out><![CDATA[Given I navigate to page....................................................passed
 When I enter user name......................................................passed
 And I enter password........................................................passed
@@ -8,7 +8,7 @@ And I click on Login button.................................................pass
 Then I land on home page....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To validate the login" name="Login_2" time="2.393">
+<testcase classname="To validate the login" name="Login_2" time="5.691">
 <system-out><![CDATA[Given I navigate to page....................................................passed
 When I enter user name......................................................passed
 And I enter password........................................................passed
