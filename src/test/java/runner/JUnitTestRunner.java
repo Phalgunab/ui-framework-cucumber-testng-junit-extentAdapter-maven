@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         tags = "@All",
         dryRun = false)
 
-public class TestRunner {
+public class JUnitTestRunner {
 
         @BeforeClass
         public static void beforeProcesses(){}
